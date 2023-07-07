@@ -1,7 +1,7 @@
 import * as Style from "./style";
 
-const MainPage = () =>{
-    return(
+const MainPage = () => {
+    return (
         <Style.MainPage>
             <header>
                 <div>
@@ -16,7 +16,20 @@ const MainPage = () =>{
                     <div className="budget">Orçamento</div>
                 </div>
             </header>
-            <body> main contet here</body>
+            <body>
+                <section className="part01">
+                    <div>
+                        <p>Decorando sonhos,</p>
+                        <h2></h2>
+                        <p>criando mundos.</p>
+                        <img src='/src/assets/images/arrowDown.png'></img>
+                    </div>
+                </section>
+                <section className="part02">nossa missao</section>
+                <section className="part03">sobre</section>
+                <section className="part04">servi~cos</section>
+                <section className="part05">projetos</section>
+            </body>
             <footer> final of the website</footer>
         </Style.MainPage>
     )
