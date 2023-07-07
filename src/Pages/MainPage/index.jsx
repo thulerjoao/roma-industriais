@@ -5,16 +5,15 @@ const MainPage = () =>{
         <Style.MainPage>
             <header>
                 <div>
-                    <img src='/src/assets/logos/logo01.png'></img>
-                    <h2>Roma Industriais</h2>
+                    <img src='/src/assets/logos/logo03.png'></img>
                 </div>
                 <div>
                     <p>Início</p>
                     <p>Nossa missão</p>
-                    <p>Spbre</p>
+                    <p>Sobre</p>
                     <p>Serviços</p>
                     <p>Projetos</p>
-                    <p>Orçamento</p>
+                    <div className="budget">Orçamento</div>
                 </div>
             </header>
             <body> main contet here</body>
