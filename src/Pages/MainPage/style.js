@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import background01 from '/src/assets/images/background01.png'
 
+
 export const MainPage = styled.html`
     width: 100%;
     display: flex;
@@ -16,7 +17,7 @@ export const MainPage = styled.html`
         justify-content: space-evenly;
         background-color: white;
         z-index: 99;
-        height: 144px;
+        height: 135px;
         width: 100%;
         /* border-bottom: 1px solid black; */
         
@@ -37,18 +38,18 @@ export const MainPage = styled.html`
                 margin-top: 3px;
                 cursor: pointer;
                 border-bottom: 3px solid #ffffff00;
-                transition: 0.4s ease-in-out;
+                transition: 0.2s ease-in-out;
 
             }
 
             p:hover{
-                color: red;
+                color: #df0024;
                 border-bottom: 3px solid red;
             }
  
 
             .budget{
-                background-color: red;
+                background-color: #df0024;
                 color: white;
                 padding: 12px;
                 border-radius: 5px;
@@ -69,11 +70,11 @@ export const MainPage = styled.html`
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        margin-top: 144px;
+        margin-top: 135px;
 
         section{
             width: 100%;
-            min-height: calc(100vh - 144px);
+            min-height: calc(100vh - 135px);
 
         }
 
@@ -82,7 +83,7 @@ export const MainPage = styled.html`
             background-size: 100%;
 
             div{
-                min-height: calc(100vh - 144px);
+                min-height: calc(100vh - 135px);
                 width: 100%;
                 background-color: #00000090;
                 color: white;
@@ -96,7 +97,7 @@ export const MainPage = styled.html`
                 }
 
                 h2{
-                    border: 2.5px solid red;
+                    border: 2.5px solid #df0024;
                     width: 40%;
                 }
 
@@ -124,6 +125,67 @@ export const MainPage = styled.html`
         }
 
         .part02{
+            display: flex;
+            flex-direction: row;
+
+            div{
+                width: 50%;
+                height: calc(100vh - 135px);
+
+            }
+
+            .first{
+                    background-color: #df0024;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    h2{
+                        color: white;
+                    }
+
+                    .firstText{
+                    font-size: 2em;
+                    width: 15rem;
+                    text-align: center;
+                    margin-bottom: 1rem;
+                }
+
+                .secondText{
+                    font-size: 1.2em;
+                    width: 22rem;
+                    text-align: center;
+                    border-top: 1px solid white;
+                    padding-top: 1rem;
+                    
+                }
+
+                .buttonBudget{
+                    color: white;
+                    background-color: black;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    margin-top: 2rem;
+                }
+
+                .buttonBudget:hover{
+                    transform: scale(1.01);
+                }
+            }
+
+            .second{
+                display: flex;
+                flex-direction: row;
+
+                img{
+                    
+                }
+            }
+
+            
+
 
         }
     }
