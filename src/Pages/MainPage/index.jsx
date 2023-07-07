@@ -1,7 +1,10 @@
 import * as Style from "./style";
 // import imageRight from '../../assets/images/rightImg.jpg'
 import imageLeft from '../../assets/images/leftImg.jpg'
-// import ownerPic from '/src/assets/images/ownerPic.png'
+import arrowDown from '../../assets/images/arrowDown.png'
+import ownerPic from '/src/assets/images/ownerPic.png'
+import logo03 from '/src/assets/logos/logo03.png'
+
 
 
 const MainPage = () => {
@@ -10,7 +13,7 @@ const MainPage = () => {
         <Style.MainPage>
             <header>
                 <div>
-                    <img src='/src/assets/logos/logo03.png'></img>
+                    <img src={logo03}></img>
                 </div>
                 <div>
                     <p>Início</p>
@@ -27,7 +30,7 @@ const MainPage = () => {
                         <p>Decorando sonhos,</p>
                         <h2></h2>
                         <p>criando mundos.</p>
-                        <img src='/src/assets/images/arrowDown.png'></img>
+                        <img src={arrowDown}></img>
                     </div>
                 </section>
                 <section className="part02">
@@ -43,7 +46,7 @@ const MainPage = () => {
                 </section>
                 <section className="part03">
                     <section>
-                        <img src='/src/assets/images/ownerPic.png'></img>
+                        <img src={ownerPic}></img>
                         <div>
                             <h2>De onde viemos</h2>
                             <p>surgiu da ideia de dois potenciais projetistas, Rafael oliveira e Jonatan Martins com a proposta de entegar a seus clientes
