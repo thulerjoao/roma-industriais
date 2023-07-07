@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import background01 from '/src/assets/images/background01.png'
 
 
+
 export const MainPage = styled.html`
     width: 100%;
     display: flex;
@@ -130,7 +131,7 @@ export const MainPage = styled.html`
 
             div{
                 width: 50%;
-                height: calc(100vh - 135px);
+                height: calc(100vh - 134px);
 
             }
 
@@ -143,6 +144,7 @@ export const MainPage = styled.html`
 
                     h2{
                         color: white;
+                        
                     }
 
                     .firstText{
@@ -150,6 +152,7 @@ export const MainPage = styled.html`
                     width: 15rem;
                     text-align: center;
                     margin-bottom: 1rem;
+                    font-weight: 400;
                 }
 
                 .secondText{
@@ -158,6 +161,7 @@ export const MainPage = styled.html`
                     text-align: center;
                     border-top: 1px solid white;
                     padding-top: 1rem;
+                    font-weight: 300;
                     
                 }
 
@@ -180,13 +184,53 @@ export const MainPage = styled.html`
                 flex-direction: row;
 
                 img{
-                    
+                    max-width: 100%;
                 }
             }
+        }
 
+        .part03{
+            display: flex;
+            justify-content: center;
+            align-items: center;
             
+            
+            section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50%;
+                justify-content: space-between;
+                
+                img{
+                    height: 18rem;
+                    width: 18rem;
+                    border-radius: 50%;
+                }
 
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+    
+                    h2{
+                        font-size: 2em;
+                        padding-bottom: 3rem;
+                        border-bottom: 1px solid red;
+                        width: 350px;
+                        font-weight: 400;
+                    }
+    
+                    p{
+                        margin-top: 1rem;
+                        width: 500px;
+                        font-size: 1.2em;
+                        font-weight: 300;
 
+                    }
+                }
+            }
+            
         }
     }
 

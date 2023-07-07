@@ -1,7 +1,7 @@
 import * as Style from "./style";
 // import imageRight from '../../assets/images/rightImg.jpg'
 import imageLeft from '../../assets/images/leftImg.jpg'
-
+// import ownerPic from '/src/assets/images/ownerPic.png'
 
 
 const MainPage = () => {
@@ -41,7 +41,17 @@ const MainPage = () => {
 
                     </div>
                 </section>
-                <section className="part03">sobre</section>
+                <section className="part03">
+                    <section>
+                        <img src='/src/assets/images/ownerPic.png'></img>
+                        <div>
+                            <h2>De onde viemos</h2>
+                            <p>surgiu da ideia de dois potenciais projetistas, Rafael oliveira e Jonatan Martins com a proposta de entegar a seus clientes
+                                uma nova forma de atendimento direcionado a criação e
+                                decoração de ambientes baseado em móveis planejados</p>
+                        </div>
+                    </section>
+                </section>
                 <section className="part04">servi~cos</section>
                 <section className="part05">projetos</section>
             </body>
