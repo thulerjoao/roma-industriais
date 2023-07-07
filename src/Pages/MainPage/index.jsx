@@ -2,7 +2,7 @@ import * as Style from "./style";
 // import imageRight from '../../assets/images/rightImg.jpg'
 import imageLeft from '../../assets/images/leftImg.jpg'
 import arrowDown from '../../assets/images/arrowDown.png'
-import ownerPic from '/src/assets/images/ownerPic.png'
+import ownerPic from '/src/assets/images/ownerPic.jpg'
 import logo03 from '/src/assets/logos/logo03.png'
 
 
