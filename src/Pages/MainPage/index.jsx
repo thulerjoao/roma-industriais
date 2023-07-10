@@ -13,6 +13,10 @@ const MainPage = () => {
     const images = [
         imageRight,
         imageLeft,
+        imageRight,
+        imageLeft,
+        imageRight,
+        imageLeft,
       ];
 
     return (

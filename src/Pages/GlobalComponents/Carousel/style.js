@@ -3,13 +3,20 @@ import styled from 'styled-components';
 export const CarouselContainer = styled.div`
   position: relative;
   min-width: 100%;
+  overflow: hidden;
+`;
+
+export const CarouselTrack = styled.div`
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(${(props) => -props.currentIndex * 200}%);
+  width: ${(props) => props.totalImages * 100}%;
 `;
 
 export const CarouselImage = styled.img`
-  width: 100%;
+  min-width: 200%;
   height: 100%;
   object-fit: cover;
-  transition: opacity 0.5s ease-in-out;
 `;
 
 export const NavigationButton = styled.button`
@@ -18,7 +25,7 @@ export const NavigationButton = styled.button`
   transform: translateY(-50%);
   background-color: transparent;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
   border: none;
   cursor: pointer;
 `;
