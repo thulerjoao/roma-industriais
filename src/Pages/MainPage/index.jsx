@@ -87,7 +87,16 @@ const MainPage = () => {
                         </div>
                     </section>
                 </section>
-                <section className="part05">projetos</section>
+                <section className="part05">
+                        <div className="fisrt">
+                            <Carousel images={images} />
+                        </div>
+                        <div className="second">
+                            <p className="firstText">Se apaixone por alguns dos</p>
+                            <p className="secondText">nossos últimos projetos.</p>
+                            <p className="buttonBudget">Quero um orçamento</p>
+                        </div> 
+                </section>
             </body>
             <footer> final of the website</footer>
         </Style.MainPage>
