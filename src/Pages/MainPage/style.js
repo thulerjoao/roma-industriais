@@ -10,6 +10,15 @@ export const MainPage = styled.html`
     justify-content: start;
     align-items: center;
 
+    .hidenImage{
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+        max-width: 150rem;
+        background-size: 100%;
+        bottom: 0;
+    }
+
     header{
         position: fixed;
         display: flex;
@@ -130,7 +139,6 @@ export const MainPage = styled.html`
             flex-direction: row;
 
             div{
-                
                 width: 50%;
                 height: calc(100vh - 96px);
 
@@ -194,7 +202,7 @@ export const MainPage = styled.html`
             display: flex;
             justify-content: center;
             align-items: center;
-            border-bottom: 1px solid black;
+            background-color: white;
             
             
             section{
@@ -203,6 +211,8 @@ export const MainPage = styled.html`
                 align-items: center;
                 width: 50%;
                 justify-content: space-between;
+                height: calc(100vh - 96px);
+
                 
                 img{
                     height: 18rem;
@@ -234,10 +244,89 @@ export const MainPage = styled.html`
             }
             
         }
+
+        .part04{
+            margin-top: 50vh;
+            background-color: black;
+            color: white;
+            height: calc(100vh - 96px);            
+
+            section{
+                display: flex;
+                align-items: center;
+                padding: 0 10rem;
+
+                h2{
+                    width: 1px;
+                    height: 60vh;
+                    border: 1px solid white;
+                };
+
+                .catologDiv{
+                    width: 100%;
+                    max-height: 50%;
+                    margin-top: -3rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    p{
+                        font-size: 2rem;
+                        margin: 0.1rem;
+                        text-align: start;
+                    }
+
+                    .redText{
+                        color:  #df0024;
+                    }
+
+                    .catalog{
+                        margin-top: 2rem;
+                        font-size: 1em;
+                        background-color: white;
+                        padding: 10px 20px;
+                        color: black;
+                        cursor: pointer;
+                        border-radius: 5px;
+                        margin-top: 2rem;
+
+                        &:hover{
+                            transform: scale(1.01);
+                        }
+                    }
+                }
+
+                .exampleDiv{
+                        width: 100%;
+                        max-width: 50%;
+                        margin-top: -3rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        flex-wrap: wrap;
+
+                        .examples{
+                            font-size: 1.3em;
+                            width: 50%;
+                            text-align: start;
+                            padding-left: 25%;
+                            margin: 2rem 0;
+                        }
+                    }
+            }
+        }
+
+        .part05{
+            background-color: white;
+            height: calc(100vh - 96px);
+
+        }
     }
 
     footer{
         border-top: 1px solid black;
         width: 100%;
+        background-color: white;
     }
 `

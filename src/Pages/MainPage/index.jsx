@@ -3,6 +3,7 @@ import imageRight from '../../assets/images/rightImg.jpg'
 import imageLeft from '../../assets/images/leftImg.jpg'
 import arrowDown from '../../assets/images/arrowDown.png'
 import ownerPic from '/src/assets/images/ownerPic.jpg'
+import hidenImg from '/src/assets/images/hidenImg.jpg'
 import logo03 from '/src/assets/logos/logo03.png'
 import Carousel from '../GlobalComponents/Carousel/index';
 
@@ -21,6 +22,7 @@ const MainPage = () => {
 
     return (
         <Style.MainPage>
+            <img className="hidenImage" src={hidenImg}></img>
             <header>
                 <div>
                     <img src={logo03}></img>
@@ -50,7 +52,6 @@ const MainPage = () => {
                         <p className="buttonBudget">Quero orçar</p>
                     </div>
                     <div className="second">
-                        {/* <img src={imageRight}></img> */}
                         <Carousel images={images} />
                     </div>
                 </section>
@@ -65,7 +66,27 @@ const MainPage = () => {
                         </div>
                     </section>
                 </section>
-                <section className="part04">servi~cos</section>
+                <section className="part04">
+                    <section>
+                        <div className="catologDiv">
+                            <p>Renove cada ambiente</p>
+                            <p>com nossos exclusivos</p>
+                            <p className="redText">móveis de alto padrão.</p>
+                            <p className="catalog">Conferir catálogo</p>
+                        </div>
+                        <h2></h2>
+                        <div className="exampleDiv">
+                            <p className="examples">• Cozinhas</p>
+                            <p className="examples">• Banheiros</p>
+                            <p className="examples">• Quartos</p>
+                            <p className="examples">• Sala de estar</p>
+                            <p className="examples">• Coberturas</p>
+                            <p className="examples">• Salas comerciais</p>
+                            <p className="examples">• Escritórios</p>
+                            <p className="examples">• Consultórios</p>
+                        </div>
+                    </section>
+                </section>
                 <section className="part05">projetos</section>
             </body>
             <footer> final of the website</footer>
