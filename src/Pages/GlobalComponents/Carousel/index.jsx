@@ -7,19 +7,22 @@ const Carousel = ({ images }) => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [startX, setStartX] = useState(0);
     const [isDragging, setIsDragging] = useState(false);
+    const [isHovered, setIsHovered] = useState(false);
     const carouselRef = useRef(null);
 
     useEffect(() => {
         const interval = setInterval(() => {
+          if (!isHovered) {
             setCurrentIndex((prevIndex) =>
-                prevIndex === images.length - 1 ? 0 : prevIndex + 1
+              prevIndex === images.length - 1 ? 0 : prevIndex + 1
             );
-        }, 5000);
-
+          }
+        }, 6000);
+    
         return () => {
-            clearInterval(interval);
+          clearInterval(interval);
         };
-    }, [images]);
+      }, [images, isHovered]);
 
     const handleTouchStart = (e) => {
         setStartX(e.touches[0].clientX);
@@ -64,6 +67,8 @@ const Carousel = ({ images }) => {
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={() => setIsDragging(false)}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
         >
             <Style.CarouselTrack
                 ref={carouselRef}

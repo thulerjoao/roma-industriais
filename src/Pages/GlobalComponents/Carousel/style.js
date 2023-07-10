@@ -8,7 +8,7 @@ export const CarouselContainer = styled.div`
 
 export const CarouselTrack = styled.div`
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.9s ease-in-out;
   transform: translateX(${(props) => -props.currentIndex * 200}%);
   width: ${(props) => props.totalImages * 100}%;
 `;
@@ -17,6 +17,11 @@ export const CarouselImage = styled.img`
   min-width: 200%;
   height: 100%;
   object-fit: cover;
+  transition: 0.7s ease-in-out;
+
+  &:hover{
+    transform: scale(1.1);
+  }
 `;
 
 export const NavigationButton = styled.button`
