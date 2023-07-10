@@ -53,6 +53,11 @@ export const MainPage = styled.html`
                 color: #df0024;
                 border-bottom: 3px solid red;
             }
+
+            .active{
+                color: #df0024;
+                border-bottom: 3px solid red;
+            }
  
 
             .budget{

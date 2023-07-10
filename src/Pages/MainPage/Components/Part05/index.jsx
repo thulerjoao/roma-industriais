@@ -2,6 +2,8 @@ import * as Style from "./style";
 import imageRight from '../../../../assets/images/rightImg.jpg'
 import imageLeft from '../../../../assets/images/leftImg.jpg'
 import Carousel from '../../../GlobalComponents/Carousel/index';
+import { handleWhatsAppRedirect } from "../../../../Utils/functions/linkToWpp"
+
 
 const Part05 = () => {
 
@@ -22,7 +24,7 @@ const Part05 = () => {
             <div className="second">
                 <p className="firstText">Se apaixone por alguns dos</p>
                 <p className="secondText">nossos últimos projetos.</p>
-                <p className="buttonBudget">Quero um orçamento</p>
+                <p className="buttonBudget" onClick={handleWhatsAppRedirect}>Quero um orçamento</p>
             </div>
         </Style.Part05>
     )

@@ -1,6 +1,10 @@
 import * as Style from "./style";
+import catalogo from "../../../../assets/Catalogo/catalogo.pdf"
 
 const Part04 = () => {
+
+    
+
     return (
         <Style.Part04>
             <section>
@@ -8,7 +12,9 @@ const Part04 = () => {
                             <p>Renove cada ambiente</p>
                             <p>com nossos exclusivos</p>
                             <p className="redText">móveis de alto padrão.</p>
-                            <p className="catalog">Conferir catálogo</p>
+                            <p className="catalog">
+                                <a href={catalogo} download="catalogo_roma.pdf">Conferir catálogo</a>
+                            </p>
                         </div>
                         <h2></h2>
                         <div className="exampleDiv">

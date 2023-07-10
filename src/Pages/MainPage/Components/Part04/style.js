@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Part04 = styled.section`
-    margin-top: 50vh;
+            margin-top: 470px;
             background-color: black;
             color: white;
             height: calc(100vh - 96px);            
@@ -41,10 +41,15 @@ export const Part04 = styled.section`
                         font-size: 1em;
                         background-color: white;
                         padding: 10px 20px;
-                        color: black;
                         cursor: pointer;
                         border-radius: 5px;
                         margin-top: 2rem;
+
+                        a{
+                            text-decoration: none;
+                            color: black;
+
+                        }
 
                         &:hover{
                             transform: scale(1.01);
