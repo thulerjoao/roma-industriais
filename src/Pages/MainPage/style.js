@@ -18,12 +18,12 @@ export const MainPage = styled.html`
         justify-content: space-evenly;
         background-color: white;
         z-index: 99;
-        height: 135px;
+        height: 100px;
         width: 100%;
         /* border-bottom: 1px solid black; */
         
         img{
-            height: 120px;
+            height: 85px;
         }
 
         div{
@@ -71,11 +71,11 @@ export const MainPage = styled.html`
         flex-direction: column;
         align-items: center;
         justify-content: start;
-        margin-top: 135px;
+        margin-top: 100px;
 
         section{
             width: 100%;
-            min-height: calc(100vh - 135px);
+            min-height: calc(100vh - 100px);
 
         }
 
@@ -84,7 +84,7 @@ export const MainPage = styled.html`
             background-size: 100%;
 
             div{
-                min-height: calc(100vh - 135px);
+                min-height: calc(100vh - 100px);
                 width: 100%;
                 background-color: #00000090;
                 color: white;
@@ -130,8 +130,9 @@ export const MainPage = styled.html`
             flex-direction: row;
 
             div{
+                
                 width: 50%;
-                height: calc(100vh - 134px);
+                height: calc(100vh - 96px);
 
             }
 
@@ -193,6 +194,7 @@ export const MainPage = styled.html`
             display: flex;
             justify-content: center;
             align-items: center;
+            border-bottom: 1px solid black;
             
             
             section{

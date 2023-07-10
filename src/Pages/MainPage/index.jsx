@@ -1,13 +1,19 @@
 import * as Style from "./style";
-// import imageRight from '../../assets/images/rightImg.jpg'
+import imageRight from '../../assets/images/rightImg.jpg'
 import imageLeft from '../../assets/images/leftImg.jpg'
 import arrowDown from '../../assets/images/arrowDown.png'
 import ownerPic from '/src/assets/images/ownerPic.jpg'
 import logo03 from '/src/assets/logos/logo03.png'
+import Carousel from '../GlobalComponents/Carousel/index';
 
 
 
 const MainPage = () => {
+
+    const images = [
+        imageRight,
+        imageLeft,
+      ];
 
     return (
         <Style.MainPage>
@@ -40,8 +46,8 @@ const MainPage = () => {
                         <p className="buttonBudget">Quero orçar</p>
                     </div>
                     <div className="second">
-                        <img src={imageLeft}></img>
-
+                        {/* <img src={imageRight}></img> */}
+                        <Carousel images={images} />
                     </div>
                 </section>
                 <section className="part03">
