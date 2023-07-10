@@ -254,7 +254,7 @@ export const MainPage = styled.html`
             section{
                 display: flex;
                 align-items: center;
-                padding: 0 10rem;
+                padding: 0 8rem;
 
                 h2{
                     width: 1px;
@@ -310,7 +310,7 @@ export const MainPage = styled.html`
                             font-size: 1.3em;
                             width: 50%;
                             text-align: start;
-                            padding-left: 25%;
+                            padding-left: 20%;
                             margin: 2rem 0;
                         }
                     }
