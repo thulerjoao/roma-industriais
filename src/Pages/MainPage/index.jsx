@@ -1,24 +1,15 @@
 import * as Style from "./style";
-import imageRight from '../../assets/images/rightImg.jpg'
-import imageLeft from '../../assets/images/leftImg.jpg'
-import arrowDown from '../../assets/images/arrowDown.png'
-import ownerPic from '/src/assets/images/ownerPic.jpg'
 import hidenImg from '/src/assets/images/hidenImg.jpg'
 import logo03 from '/src/assets/logos/logo03.png'
-import Carousel from '../GlobalComponents/Carousel/index';
+import Part01 from './Components/Part01'
+import Part02 from "./Components/Part02";
+import Part03 from "./Components/Part03";
+import Part04 from "./Components/Part04";
+import Part05 from "./Components/Part05";
 
 
 
 const MainPage = () => {
-
-    const images = [
-        imageRight,
-        imageLeft,
-        imageRight,
-        imageLeft,
-        imageRight,
-        imageLeft,
-      ];
 
     return (
         <Style.MainPage>
@@ -37,66 +28,11 @@ const MainPage = () => {
                 </div>
             </header>
             <body>
-                <section className="part01">
-                    <div>
-                        <p>Decorando sonhos,</p>
-                        <h2></h2>
-                        <p>criando mundos.</p>
-                        <img src={arrowDown}></img>
-                    </div>
-                </section>
-                <section className="part02">
-                    <div className="first">
-                        <p className="firstText">Realize conosco o seu projeto dos sonhos.</p>
-                        <p className="secondText">Te ajudaremos a tirar do papel o projeto de ter móveis de alto padrão e sob medida para seu lar, gerando sofisticação, conforto e requinte.</p>
-                        <p className="buttonBudget">Quero orçar</p>
-                    </div>
-                    <div className="second">
-                        <Carousel images={images} />
-                    </div>
-                </section>
-                <section className="part03">
-                    <section>
-                        <img src={ownerPic}></img>
-                        <div>
-                            <h2>De onde viemos</h2>
-                            <p>surgiu da ideia de dois potenciais projetistas, Rafael oliveira e Jonatan Martins com a proposta de entegar a seus clientes
-                                uma nova forma de atendimento direcionado a criação e
-                                decoração de ambientes baseado em móveis planejados</p>
-                        </div>
-                    </section>
-                </section>
-                <section className="part04">
-                    <section>
-                        <div className="catologDiv">
-                            <p>Renove cada ambiente</p>
-                            <p>com nossos exclusivos</p>
-                            <p className="redText">móveis de alto padrão.</p>
-                            <p className="catalog">Conferir catálogo</p>
-                        </div>
-                        <h2></h2>
-                        <div className="exampleDiv">
-                            <p className="examples">• Cozinhas</p>
-                            <p className="examples">• Banheiros</p>
-                            <p className="examples">• Quartos</p>
-                            <p className="examples">• Sala de estar</p>
-                            <p className="examples">• Coberturas</p>
-                            <p className="examples">• Salas comerciais</p>
-                            <p className="examples">• Escritórios</p>
-                            <p className="examples">• Consultórios</p>
-                        </div>
-                    </section>
-                </section>
-                <section className="part05">
-                        <div className="fisrt">
-                            <Carousel images={images} />
-                        </div>
-                        <div className="second">
-                            <p className="firstText">Se apaixone por alguns dos</p>
-                            <p className="secondText">nossos últimos projetos.</p>
-                            <p className="buttonBudget">Quero um orçamento</p>
-                        </div> 
-                </section>
+                <Part01/>
+                <Part02/>
+                <Part03/>
+                <Part04/>
+                <Part05/>
             </body>
             <footer> final of the website</footer>
         </Style.MainPage>
