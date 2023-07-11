@@ -20,7 +20,7 @@ export const Part03 = styled.section`
                     width: 18rem;
                     border-radius: 50%;
                     margin-right: -10rem;
-                    box-shadow: 0px 0px 25px 7px black;
+                    box-shadow: 2px 2px 10px 1px black;
 
                 }
 
