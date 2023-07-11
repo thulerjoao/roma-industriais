@@ -11,8 +11,7 @@ export const Part03 = styled.section`
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                max-width: 50%;
-                justify-content: space-between;
+                justify-content: space-evenly;
                 height: calc(100vh - 96px);
 
                 
@@ -20,6 +19,7 @@ export const Part03 = styled.section`
                     height: 18rem;
                     width: 18rem;
                     border-radius: 50%;
+                    margin-right: -10rem;
                 }
 
                 div{

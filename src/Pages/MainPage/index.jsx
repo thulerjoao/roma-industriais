@@ -24,6 +24,13 @@ const MainPage = () => {
         }
       };
 
+      function hvToPx(hv) {
+        const viewportHeight = window.innerHeight;
+        return (hv * viewportHeight) / 100;
+      }
+
+      const space = 100 - hvToPx(50)
+
     return (
         <Style.MainPage>
             <img className="hidenImage" src={hidenImg}></img>
@@ -49,7 +56,7 @@ const MainPage = () => {
                         Sobre
                     </p>
                     <p className={activeSection === 'services' ? 'active' : ''}
-                        onClick={() => handleMenuClick('services', -370)}
+                        onClick={() => handleMenuClick('services', space)}
                     >
                         Serviços
                     </p>

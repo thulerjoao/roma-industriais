@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Part04 = styled.section`
-            margin-top: 470px;
+            margin-top: 50vh;
             background-color: black;
             color: white;
             height: calc(100vh - 96px);            
