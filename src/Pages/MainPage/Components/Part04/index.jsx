@@ -22,7 +22,7 @@ const Part04 = () => {
                             <p className="examples">• Banheiros</p>
                             <p className="examples">• Quartos</p>
                             <p className="examples">• Sala de estar</p>
-                            <p className="examples">• Coberturas</p>
+                            <p className="examples">• Lojas</p>
                             <p className="examples">• Salas comerciais</p>
                             <p className="examples">• Escritórios</p>
                             <p className="examples">• Consultórios</p>
