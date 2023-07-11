@@ -15,7 +15,9 @@ export const CarouselTrack = styled.div`
 
 export const CarouselImage = styled.img`
   min-width: 200%;
-  height: 100%;
+  /* height: 100%; */
+  background-size: 100%;
+  /* height: 100%; */
   object-fit: cover;
   transition: 0.7s ease-in-out;
 
