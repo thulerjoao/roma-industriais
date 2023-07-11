@@ -8,6 +8,7 @@ import Part03 from "./Components/Part03";
 import Part04 from "./Components/Part04";
 import Part05 from "./Components/Part05";
 import { useState } from "react";
+import Part06 from "./Components/Part06";
 
 
 
@@ -65,6 +66,11 @@ const MainPage = () => {
                     >
                         Projetos
                     </p>
+                    <p className={activeSection === 'contact' ? 'active' : ''}
+                        onClick={() => handleMenuClick('contact', 100)}
+                    >
+                        Contato
+                    </p>
                     <div className="budget" onClick={handleWhatsAppRedirect}
                     >Orçamento</div>
                 </div>
@@ -84,9 +90,11 @@ const MainPage = () => {
                 </section>
                 <section id='projects'>
                     <Part05 />
+                </section><section id='contact'>
+                    <Part06 />
                 </section>
             </body>
-            <footer> final of the website</footer>
+            {/* <footer> final of the website</footer> */}
         </Style.MainPage>
     )
 }
