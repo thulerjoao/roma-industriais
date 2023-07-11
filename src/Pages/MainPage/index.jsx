@@ -94,7 +94,7 @@ const MainPage = () => {
                     <Part06 />
                 </section>
             </body>
-            {/* <footer> final of the website</footer> */}
+            <footer>© Roma Industriais | 2023 - Todos os direitos reservados</footer>
         </Style.MainPage>
     )
 }

@@ -92,8 +92,13 @@ export const MainPage = styled.html`
     }
 
     footer{
-        border-top: 1px solid black;
+        background-color: black;
+        height: 10vh;
         width: 100%;
-        background-color: white;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.8em;
     }
 `
