@@ -36,10 +36,12 @@ export const Part06 = styled.section`
             p{
                 width: 100%;
                 padding-left: 5%;
+                padding-right: 25%;
                 margin: 0.1% 0;
             }
 
             .contactP{
+                padding-right: 0;
                 min-width: 15rem;
                 max-width: 16rem;
             }
