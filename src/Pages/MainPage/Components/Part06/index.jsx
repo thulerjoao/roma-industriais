@@ -36,7 +36,7 @@ const Part06 = () => {
             <section>
                 <iframe
                     className="map"
-                    src="https://www.google.com/maps/embed?pb=!1m20!1m11!1m3!1d677.1783054990112!2d-42.52018478497411!3d-22.31242569925102!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d-22.3124145!2d-42.520151!5e1!3m2!1spt-BR!2sbr!4v1689035706072!5m2!1spt-BR!2sbr"
+                    src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d922.772564507506!2d-42.520185!3d-22.312426!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x978b1cbbd38dfd%3A0x3801558b2e9748bc!2sRoma%20industriais%2C%20Av.%20Manoel%20Carneiro%20de%20Menezes%2C%20441%20-%20Mury%2C%20Nova%20Friburgo%20-%20RJ%2C%2028615-060!3m2!1d-22.3123328!2d-42.5200548!5e0!3m2!1spt-BR!2sbr!4v1689043793600!5m2!1spt-BR!2sb"
                     allowfullscreen="true"
                     loading="lazy"></iframe>
             </section>

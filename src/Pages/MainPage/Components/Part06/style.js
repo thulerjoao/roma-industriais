@@ -55,8 +55,9 @@ export const Part06 = styled.section`
 
 
         .map{
-            height: 100%;
-            width: 100%;
+            height: 80%;
+            width: 80%;
+            border-radius: 0.5rem;
             text-decoration: none;
         }
     }
