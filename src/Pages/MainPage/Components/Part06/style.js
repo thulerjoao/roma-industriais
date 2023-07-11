@@ -4,7 +4,7 @@ import { FaPhone, FaInstagram } from 'react-icons/fa';
 
 export const Part06 = styled.section`
     display: flex;
-    background-color: #9a9a9a;
+    background-color: #D9D9D9;
 
     section{
         width: 100%;
@@ -14,23 +14,17 @@ export const Part06 = styled.section`
         flex-direction: column;
 
         html{
-            background-color: white;
-            height: 55vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 75%;
-            padding-left: 5rem;
-            border-radius: 1rem;
-            /* box-shadow: 2px 2px 5px 0px black; */
+            margin-left: 25%;
+            margin-top: -20%;
+        }
+
 
             
             h2{
                 width: 100%;
                 text-align: start;
                 /* padding-left: 15%; */
-                margin: 1.5% 0;
+                margin: 5% 0;
             }
     
             p{
@@ -58,16 +52,12 @@ export const Part06 = styled.section`
                 }
     
             }
-        }
 
 
         .map{
-            height: 55vh;
-            width: 80vh;
-            border-radius: 1rem;
-            box-shadow: 2px 2px 5px 0px black;
-
-
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
         }
     }
 `
