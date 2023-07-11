@@ -14,7 +14,7 @@ import pic_12  from '../../../../assets/jobs_images/pic_12.jpeg'
 // import pic_13  from '../../../../assets/jobs_images/pic_13.jpeg'
 import pic_14  from '../../../../assets/jobs_images/pic_14.jpeg'
 import pic_15  from '../../../../assets/jobs_images/pic_15.jpeg'
-import pic_16  from '../../../../assets/jobs_images/pic_16.jpeg'
+// import pic_16  from '../../../../assets/jobs_images/pic_16.jpeg'
 import pic_17  from '../../../../assets/jobs_images/pic_17.jpeg'
 import pic_18  from '../../../../assets/jobs_images/pic_18.jpeg'
 
@@ -42,7 +42,7 @@ const Part05 = () => {
         // pic_13,
         pic_14,
         pic_15,
-        pic_16,
+        // pic_16,
         pic_17,
         pic_18,
 
