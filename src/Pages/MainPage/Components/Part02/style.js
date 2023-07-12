@@ -11,7 +11,7 @@ export const Part02 = styled.section`
             }
 
             .first{
-                    background-color: #df0024;
+                    background-color: #515151;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -23,6 +23,7 @@ export const Part02 = styled.section`
                     }
 
                     .firstText{
+                    color: white;
                     font-size: 2em;
                     width: 15rem;
                     text-align: center;
@@ -31,10 +32,11 @@ export const Part02 = styled.section`
                 }
 
                 .secondText{
+                    color: white;
                     font-size: 1.2em;
                     width: 22rem;
                     text-align: center;
-                    border-top: 1px solid white;
+                    border-top: 1px solid #df0024;
                     padding-top: 1rem;
                     font-weight: 300;
                     
@@ -42,7 +44,7 @@ export const Part02 = styled.section`
 
                 .buttonBudget{
                     color: white;
-                    background-color: black;
+                    background-color: #df0024;
                     padding: 10px 20px;
                     cursor: pointer;
                     border-radius: 5px;
