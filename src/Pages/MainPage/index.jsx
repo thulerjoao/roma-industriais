@@ -17,8 +17,6 @@ const MainPage = () => {
     const [activeSection, setActiveSection] = useState('inicio');
     const [isScrollAtEdge, setIsScrollAtEdge] = useState(false);
 
-    console.log(isScrollAtEdge)
-
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -82,8 +80,8 @@ const MainPage = () => {
     const space = 100 - hvToPx(50)
 
     return (
-        <Style.MainPage className={isScrollAtEdge&&"blackBG"}>
-            <img className="hidenImage" src={hidenImg}></img>
+        <Style.MainPage >
+            <img className={`hidenImage ${isScrollAtEdge&&"blackBG"}`} src={hidenImg}></img>
             <header>
                 <div>
                     <img src={logo03}></img>
