@@ -24,7 +24,7 @@ const MainPage = () => {
       const documentHeight = document.documentElement.scrollHeight;
 
       // Verifica se o scroll está no topo ou no fundo
-      if (scrollTop <= 30 || scrollTop + windowHeight >= documentHeight - 30) {
+      if (scrollTop <= 150 || scrollTop + windowHeight >= documentHeight - 150) {
         setIsScrollAtEdge(true);
       } else {
         setIsScrollAtEdge(false);
