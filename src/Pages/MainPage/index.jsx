@@ -106,7 +106,7 @@ const MainPage = () => {
                 <div>
                     <img src={logo03}></img>
                 </div>
-                <div>
+                <div className="hiddenOnPhone">
                     <p
                         className={activeSection === 'inicio' ? 'active' : ''}
                         onClick={() => handleMenuClick('inicio', getValorWidthImagem())}

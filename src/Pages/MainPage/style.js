@@ -116,6 +116,14 @@ export const MainPage = styled.html`
         }
         header{
             height: 75px;
+
+            img{
+            height: 58px;
+            }
+
+            .hiddenOnPhone{
+                display: none;
+            }
         }
 
         body{
