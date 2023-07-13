@@ -56,5 +56,40 @@ export const Part05 = styled.section`
                     transform: scale(1.01);
                 }
             }
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+
+                div{
+                width: 100%;
+                height: calc((100vh - 96px)/2);
+
+                }
+
+                .second{
+ 
+                    .firstText{
+                        font-size: 1.6em;
+                        text-align: center;
+                        font-weight: 400;
+                        margin-top: -3rem;
+                    }
+                    
+                    .secondText{
+                        font-size: 1.6em;
+                        width: 90%;
+                        border-bottom: 1px solid white;
+                        padding: 0;
+                        padding-bottom: 3rem;
+   
+                        
+                    }
+
+                    .buttonBudget{
+                        margin-top: 3rem;
+                        
+                    }
+
+                }
+            }
 
 `

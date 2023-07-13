@@ -47,4 +47,45 @@ export const Part03 = styled.section`
                     }
                 }
             }
+
+            @media screen and (max-width: 768px) {
+
+                section{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+
+                    img{
+                        margin: 0;
+                        height: 15rem;
+                        width: 15rem;
+                    }
+
+                    div{
+                        padding: 0 2rem;
+                        max-width: 100%;
+
+                        h2{
+                        border-bottom: 1px solid red;
+                        width: 85%;
+
+                    }
+
+                        h2{
+                        font-size: 1.8em;
+                        padding-bottom: 2rem;
+
+
+                        }
+
+                        p{
+                            font-size: 1em;
+                            max-width: 100%;
+
+                        }
+                    }
+
+                }
+
+            }
 `

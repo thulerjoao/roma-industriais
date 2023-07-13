@@ -76,4 +76,56 @@ export const Part04 = styled.section`
                         }
                     }
             }
+            @media screen and (max-width: 768px) {
+
+                section{
+                    margin-top: -4rem;
+                    min-width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h2{
+                    width: 60vw ;
+                    height: 1px;
+                    border: 1px solid white;
+                    margin: 3rem 0;
+                    };
+
+                    .catologDiv{
+                        height: 40%;
+                        margin-top: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+
+                        p{
+                            font-size: 1.8em;
+                            margin: 0.1rem;
+                            text-align: start;
+                        }
+
+                    }
+
+                    .exampleDiv{
+                        min-width: 100%;
+                        min-height: 60%;
+                        margin-top: 0;
+                        justify-content: center;
+                        align-items: center;
+                        padding-right: 0%;
+
+                        .examples{
+                            font-size: 1.2em;
+                            width: default;
+                            max-width: 40%;
+                            padding-left: 0;
+                            margin: 0.9rem 0;
+                            flex-wrap: nowrap;
+
+                        }
+                    }
+                }
+
+            }
 `

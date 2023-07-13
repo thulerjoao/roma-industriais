@@ -61,6 +61,26 @@ export const Part06 = styled.section`
             text-decoration: none;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        /* justify-content: start; */
+        max-height: 100vh;
+
+
+        section{
+            max-height: calc((100vh - 96px)/2);
+            justify-content: center;
+            align-items: center;
+
+            html{
+            margin-left: 15%;
+            margin-top: -20%;
+            
+        }
+
+        }
+    }
 `
 
 export const PhoneIcon = styled(FaPhone)`

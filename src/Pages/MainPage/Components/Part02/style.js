@@ -62,4 +62,35 @@ export const Part02 = styled.section`
                     max-width: 100%;
                 }
             }
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+                
+                div{
+                width: 100%;
+                height: calc((100vh - 96px)/2);
+                }
+
+                .first{
+
+                    .firstText{
+                        width: 90%;
+                        font-size: 1.8em;
+
+                    }
+
+                    .secondText{
+                    font-size: 1em;
+                    
+                }
+
+                .buttonBudget{
+
+                    margin-top: 3vh;
+                }
+                }
+
+                
+            
+            }
 `

@@ -6,13 +6,13 @@ export const MainPage = styled.html`
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    overflow: hidden;
 
     .hidenImage{
         position: fixed;
         z-index: -1;
-        width: 100%;
-        max-width: 150rem;
-        background-size: 100%;
+        min-width: 100%;
+        /* height: 100vh; */
         bottom: 0;
     }
 
@@ -100,5 +100,13 @@ export const MainPage = styled.html`
         align-items: center;
         justify-content: center;
         font-size: 0.8em;
+    }
+
+    @media screen and (max-width: 768px) {
+        .hidenImage{
+        background-size: 100%;
+        height: 100vh;
+        
+    }
     }
 `

@@ -29,7 +29,6 @@ export const Part01 = styled.section`
                 img{
                     margin-top: 2%;
                     height: 2rem;
-
                     animation: moveArrow 1s infinite;
                 }
 
@@ -43,8 +42,27 @@ export const Part01 = styled.section`
                  100% {
                  transform: translateY(0);
                 }
-                }
+                }   
+            }
 
+            @media screen and (max-width: 768px) {
+
+                div{
+                        p{
+                        font-size: 2em;
+                    }
+
+                    h2{
+                        border: 1px solid #df0024;
+                        width: 80%;
+                    }
+
+                    img{
+                    margin-top: 12%;
+                    height: 1.5rem;
+                    animation: moveArrow 1s infinite;
+                }
+                }
                 
             }
 `
