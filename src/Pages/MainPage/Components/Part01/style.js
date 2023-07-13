@@ -2,8 +2,10 @@ import styled from 'styled-components';
 import background01 from '/src/assets/images/background01.png'
 
 export const Part01 = styled.section`
-    background: url(${background01});
-            background-size: 100%;
+            
+            background: url(${background01});
+            background-size: cover;
+            background-position: center;
 
             div{
                 min-height: calc(100vh - 100px);

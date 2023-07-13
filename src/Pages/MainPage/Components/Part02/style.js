@@ -7,7 +7,6 @@ export const Part02 = styled.section`
             div{
                 width: 50%;
                 height: calc(100vh - 96px);
-
             }
 
             .first{

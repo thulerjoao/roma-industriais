@@ -42,6 +42,7 @@ export const Part03 = styled.section`
                         width: 500px;
                         font-size: 1.2em;
                         font-weight: 300;
+                        text-align: justify;
 
                     }
                 }
