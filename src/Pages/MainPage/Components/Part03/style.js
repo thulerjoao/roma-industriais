@@ -57,8 +57,8 @@ export const Part03 = styled.section`
 
                     img{
                         margin: 0;
-                        height: 15rem;
-                        width: 15rem;
+                        height: 30vh;
+                        width: 30vh;
                     }
 
                     div{
