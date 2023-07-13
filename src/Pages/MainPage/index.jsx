@@ -15,8 +15,33 @@ import Part06 from "./Components/Part06";
 const MainPage = () => {
 
     const [activeSection, setActiveSection] = useState('inicio');
-    
-    const handleMenuClick = (section, px) => {
+    const [isScrollAtEdge, setIsScrollAtEdge] = useState(false);
+
+    console.log(isScrollAtEdge)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+      const documentHeight = document.documentElement.scrollHeight;
+
+      // Verifica se o scroll está no topo ou no fundo
+      if (scrollTop <= 30 || scrollTop + windowHeight >= documentHeight - 30) {
+        setIsScrollAtEdge(true);
+      } else {
+        setIsScrollAtEdge(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  const handleMenuClick = (section, px) => {
         setActiveSection(section);
         const element = document.getElementById(section);
         if (element) {
@@ -25,37 +50,39 @@ const MainPage = () => {
         }
       };
 
-      useEffect(() => {
+  
+
+    useEffect(() => {
         const handleScroll = () => {
-          const scrollPosition = window.scrollY;
-          const sections = ['inicio', 'our-mission', 'about', 'services', 'projects', 'contact'];
-    
-          for (let i = sections.length - 1; i >= 0; i--) {
-            const sectionId = sections[i];
-            const section = document.getElementById(sectionId);
-    
-            if (section.offsetTop <= scrollPosition + 200) { // Adapte o valor '200' conforme necessário
-              setActiveSection(sectionId);
-              break;
+            const scrollPosition = window.scrollY;
+            const sections = ['inicio', 'our-mission', 'about', 'services', 'projects', 'contact'];
+
+            for (let i = sections.length - 1; i >= 0; i--) {
+                const sectionId = sections[i];
+                const section = document.getElementById(sectionId);
+
+                if (section.offsetTop <= scrollPosition + 200) { // Adapte o valor '200' conforme necessário
+                    setActiveSection(sectionId);
+                    break;
+                }
             }
-          }
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         return () => {
-          window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('scroll', handleScroll);
         };
-      }, []);
+    }, []);
 
-      function hvToPx(hv) {
+    function hvToPx(hv) {
         const viewportHeight = window.innerHeight;
         return (hv * viewportHeight) / 100;
-      }
+    }
 
-      const space = 100 - hvToPx(50)
+    const space = 100 - hvToPx(50)
 
     return (
-        <Style.MainPage>
+        <Style.MainPage className={isScrollAtEdge&&"blackBG"}>
             <img className="hidenImage" src={hidenImg}></img>
             <header>
                 <div>

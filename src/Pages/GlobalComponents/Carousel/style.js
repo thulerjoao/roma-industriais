@@ -4,6 +4,9 @@ export const CarouselContainer = styled.div`
   position: relative;
   min-width: 100%;
   overflow: hidden;
+  /* border: 10px solid #515151;
+  border-top: 0; */
+  /* margin-top: -1px; */
 `;
 
 export const CarouselTrack = styled.div`
@@ -14,7 +17,6 @@ export const CarouselTrack = styled.div`
 
   @media screen and (max-width: 768px) {
     transform: translateX(${(props) => -props.currentIndex * 100}%);
-
   }
 `;
 

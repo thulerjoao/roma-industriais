@@ -7,13 +7,19 @@ export const MainPage = styled.html`
     justify-content: start;
     align-items: center;
     overflow: hidden;
-
+    
     .hidenImage{
         position: fixed;
         z-index: -1;
         min-width: 100%;
         /* height: 100vh; */
         bottom: 0;
+        /* display: none; */
+
+    }
+
+    &.blackBG{
+        background-color: black;
     }
 
     header{
