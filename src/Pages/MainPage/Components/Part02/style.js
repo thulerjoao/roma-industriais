@@ -18,7 +18,6 @@ export const Part02 = styled.section`
 
                     h2{
                         color: white;
-                        
                     }
 
                     .firstText{
