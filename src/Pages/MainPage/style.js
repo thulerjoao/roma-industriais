@@ -50,8 +50,8 @@ export const MainPage = styled.html`
             }
 
             p:hover{
-                color: #df0024;
-                border-bottom: 3px solid red;
+                /* color: #df0024; */
+                /* border-bottom: 3px solid red; */
             }
 
             .active{
