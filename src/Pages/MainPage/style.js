@@ -33,6 +33,10 @@ export const MainPage = styled.html`
         height: 100px;
         width: 100%;
         /* border-bottom: 1px solid black; */
+
+        .socialDiv{
+            display: none;
+        }
         
         img{
             height: 85px;
@@ -116,6 +120,8 @@ export const MainPage = styled.html`
         }
         header{
             height: 75px;
+            justify-content: space-between;
+            padding: 0 5%;
 
             img{
             height: 58px;
@@ -123,6 +129,15 @@ export const MainPage = styled.html`
 
             .hiddenOnPhone{
                 display: none;
+            }
+
+            .socialDiv{
+            display: flex;
+
+                img{
+                    height: 40px;
+                    margin-right: 17%;
+                }
             }
         }
 

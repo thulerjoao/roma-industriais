@@ -1,6 +1,8 @@
 import * as Style from "./style";
 import hidenImg from '/src/assets/images/hidenImg.jpg'
 import logo03 from '/src/assets/logos/logo03.png'
+import wpp from '/src/assets/logos/wpp.png'
+import instagram from '/src/assets/logos/instagram.png'
 import { handleWhatsAppRedirect } from "../../Utils/functions/linkToWpp.js"
 import Part01 from './Components/Part01'
 import Part02 from "./Components/Part02";
@@ -98,6 +100,12 @@ const MainPage = () => {
     }
 
     const space = getValorWidthImagemToService() - hvToPx(50)
+
+    const redirectToInstagram = () => {
+        const instagramUsername = 'romaindustriais'; // Substitua pelo nome de usuário do perfil do Instagram desejado
+        const instagramURL = `https://www.instagram.com/${instagramUsername}`;
+        window.open(instagramURL, '_blank');
+      };
     
     return (
         <Style.MainPage >
@@ -105,6 +113,11 @@ const MainPage = () => {
             <header>
                 <div>
                     <img src={logo03}></img>
+                    
+                </div>
+                <div className="socialDiv">
+                    <img onClick={redirectToInstagram} src={instagram}></img>
+                    <img onClick={handleWhatsAppRedirect} src={wpp}></img>
                 </div>
                 <div className="hiddenOnPhone">
                     <p
