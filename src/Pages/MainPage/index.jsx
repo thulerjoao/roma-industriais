@@ -7,7 +7,7 @@ import Part02 from "./Components/Part02";
 import Part03 from "./Components/Part03";
 import Part04 from "./Components/Part04";
 import Part05 from "./Components/Part05";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Part06 from "./Components/Part06";
 
 
@@ -16,7 +16,7 @@ const MainPage = () => {
 
     const [activeSection, setActiveSection] = useState('inicio');
     
-      const handleMenuClick = (section, px) => {
+    const handleMenuClick = (section, px) => {
         setActiveSection(section);
         const element = document.getElementById(section);
         if (element) {
@@ -24,6 +24,28 @@ const MainPage = () => {
           window.scrollTo({ top: topOffset, behavior: 'smooth' });
         }
       };
+
+      useEffect(() => {
+        const handleScroll = () => {
+          const scrollPosition = window.scrollY;
+          const sections = ['inicio', 'our-mission', 'about', 'services', 'projects', 'contact'];
+    
+          for (let i = sections.length - 1; i >= 0; i--) {
+            const sectionId = sections[i];
+            const section = document.getElementById(sectionId);
+    
+            if (section.offsetTop <= scrollPosition + 200) { // Adapte o valor '200' conforme necessário
+              setActiveSection(sectionId);
+              break;
+            }
+          }
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+      }, []);
 
       function hvToPx(hv) {
         const viewportHeight = window.innerHeight;
