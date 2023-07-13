@@ -113,6 +113,13 @@ export const MainPage = styled.html`
         background-size: 100%;
         height: 100vh;
         
-    }
+        }
+        header{
+            height: 75px;
+        }
+
+        body{
+            margin-top: 75px;
+        }
     }
 `

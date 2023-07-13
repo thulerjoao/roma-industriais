@@ -54,6 +54,8 @@ export const Part03 = styled.section`
                     width: 100%;
                     flex-direction: column;
                     align-items: center;
+                    height: calc(100vh - 75px);
+
 
                     img{
                         margin: 0;

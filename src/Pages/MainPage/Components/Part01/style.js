@@ -48,6 +48,8 @@ export const Part01 = styled.section`
             @media screen and (max-width: 768px) {
 
                 div{
+                    min-height: calc(100vh - 75px);
+                    
                         p{
                         font-size: 2em;
                     }

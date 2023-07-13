@@ -68,7 +68,7 @@ export const Part02 = styled.section`
                 
                 div{
                 width: 100%;
-                height: calc((100vh - 96px)/2);
+                height: calc((100vh - 75px)/2);
                 }
 
                 .first{

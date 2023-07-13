@@ -77,8 +77,28 @@ const MainPage = () => {
         return (hv * viewportHeight) / 100;
     }
 
-    const space = 100 - hvToPx(50)
+    const widthJanela = window.innerWidth;
+    
+    function getValorWidthImagem() {
+        
+        if (widthJanela > 768) {
+            return 100;
+        } else {
+            return 75;
+        }
+    }
 
+    function getValorWidthImagemToService() {
+        
+        if (widthJanela > 768) {
+            return 100;
+        } else {
+            return 138;
+        }
+    }
+
+    const space = getValorWidthImagemToService() - hvToPx(50)
+    
     return (
         <Style.MainPage >
             <img className={`hidenImage ${isScrollAtEdge&&"blackBG"}`} src={hidenImg}></img>
@@ -89,17 +109,17 @@ const MainPage = () => {
                 <div>
                     <p
                         className={activeSection === 'inicio' ? 'active' : ''}
-                        onClick={() => handleMenuClick('inicio', 100)}
+                        onClick={() => handleMenuClick('inicio', getValorWidthImagem())}
                     >
                         Início
                     </p>
                     <p className={activeSection === 'our-mission' ? 'active' : ''}
-                        onClick={() => handleMenuClick('our-mission', 100)}
+                        onClick={() => handleMenuClick('our-mission', getValorWidthImagem())}
                     >
                         Nossa missão
                     </p>
                     <p className={activeSection === 'about' ? 'active' : ''}
-                        onClick={() => handleMenuClick('about', 100)}
+                        onClick={() => handleMenuClick('about', getValorWidthImagem())}
                     >
                         Sobre
                     </p>
@@ -109,12 +129,12 @@ const MainPage = () => {
                         Serviços
                     </p>
                     <p className={activeSection === 'projects' ? 'active' : ''}
-                        onClick={() => handleMenuClick('projects', 100)}
+                        onClick={() => handleMenuClick('projects', getValorWidthImagem())}
                     >
                         Projetos
                     </p>
                     <p className={activeSection === 'contact' ? 'active' : ''}
-                        onClick={() => handleMenuClick('contact', 100)}
+                        onClick={() => handleMenuClick('contact', getValorWidthImagem())}
                     >
                         Contato
                     </p>
