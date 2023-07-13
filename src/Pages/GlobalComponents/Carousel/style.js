@@ -33,6 +33,10 @@ export const CarouselImage = styled.img`
   @media screen and (max-width: 768px) {
     min-width: 100%;
 
+    &:hover{
+    transform: scale(1);
+  }
+
   }
 `;
 
