@@ -85,7 +85,7 @@ export const Part04 = styled.section`
                     justify-content: center;
 
                     h2{
-                    width: 60vw ;
+                    width: 80vw ;
                     height: 1px;
                     border: 1px solid white;
                     margin: 3rem 0;
@@ -116,9 +116,9 @@ export const Part04 = styled.section`
                         padding-right: 0%;
 
                         .examples{
-                            font-size: 1.2em;
+                            font-size: 1.1em;
                             width: default;
-                            max-width: 40%;
+                            max-width: 42%;
                             padding-left: 0;
                             margin: 0.9rem 0;
                             flex-wrap: nowrap;
