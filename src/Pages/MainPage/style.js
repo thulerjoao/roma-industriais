@@ -121,7 +121,7 @@ export const MainPage = styled.html`
         header{
             height: 75px;
             justify-content: space-between;
-            padding: 0 5%;
+            padding: 0 3%;
 
             img{
             height: 58px;

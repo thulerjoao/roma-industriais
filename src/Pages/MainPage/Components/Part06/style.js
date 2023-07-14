@@ -1,12 +1,13 @@
 import styled from 'styled-components';
-import { FaPhone, FaInstagram } from 'react-icons/fa';
 
 
 export const Part06 = styled.section`
     display: flex;
     background-color: #D9D9D9;
+    height: calc((100vh - 100px));
 
-    section{
+
+    .mainDiv{
         width: 100%;
         display: flex;
         align-items: center;
@@ -39,13 +40,18 @@ export const Part06 = styled.section`
                 min-width: 15rem;
                 max-width: 16rem;
             }
+
+            img{
+                height: 22px;
+                cursor: pointer;
+            }
     
             div{
                 /* padding-left: 30%; */
                 display: flex;
                 width:100%;
                 text-align: start;
-                margin-bottom: 1%;
+                margin-bottom: 2%;
                 
                 p{
                     cursor: pointer;
@@ -64,33 +70,45 @@ export const Part06 = styled.section`
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
-        /* justify-content: start; */
-        max-height: 100vh;
+        height: calc((100vh - 75px));
+        justify-content: space-between;
 
 
-        section{
-            max-height: calc((100vh - 96px)/2);
-            justify-content: center;
-            align-items: center;
+
+        .mainDiv{
+ 
+            height: 50%;
+            width: 100%;
+            justify-content: start;
+            padding: 5% 8%;
+            
 
             html{
-            margin-left: 15%;
-            margin-top: -20%;
-            
-        }
+                max-height: 50%;
+                margin-left: 0%;
+                margin-top: 0vh;
+            }
 
+            h2{
+                font-size: 1.4em;
+                margin-bottom: 1vh;
+                margin-top: 2.5vh;
+
+            }
+
+            p{
+                font-size: 1em;
+                margin: 0;
+            }
+
+            .map{
+            height: 35vh;
+            width: 95%;
+            border-radius: 0.5rem;
+            /* margin-top: 5%; */
+
+            text-decoration: none;
+        }
         }
     }
 `
-
-export const PhoneIcon = styled(FaPhone)`
-    color: green;
-    font-size: 24px;
-    cursor: pointer;
-`;
-
-export const InstagramIcon = styled(FaInstagram)`
-    color: purple;
-    font-size: 24px;
-    cursor: pointer;
-`;
