@@ -105,7 +105,7 @@ export const Part06 = styled.section`
             height: 30vh;
             width: 95%;
             border-radius: 0.5rem;
-            margin-top: 5%;
+            margin-top: 7%;
 
             text-decoration: none;
         }
