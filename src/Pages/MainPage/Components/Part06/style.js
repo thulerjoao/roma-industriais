@@ -102,7 +102,7 @@ export const Part06 = styled.section`
             }
 
             .map{
-            height: 35vh;
+            height: 30vh;
             width: 95%;
             border-radius: 0.5rem;
             /* margin-top: 5%; */
