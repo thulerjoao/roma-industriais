@@ -86,7 +86,7 @@ export const Part06 = styled.section`
             html{
                 max-height: 50%;
                 margin-left: 0%;
-                margin-top: -3vh;
+                margin-top: -4vh;
             }
 
             h2{
@@ -102,7 +102,7 @@ export const Part06 = styled.section`
             }
 
             .map{
-            height: 33vh;
+            height: 34vh;
             width: 95%;
             border-radius: 0.5rem;
             margin-top: 7%;
