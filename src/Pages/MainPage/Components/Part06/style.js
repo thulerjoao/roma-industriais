@@ -86,7 +86,7 @@ export const Part06 = styled.section`
             html{
                 max-height: 50%;
                 margin-left: 0%;
-                margin-top: -4vh;
+                margin-top: -3.2vh;
             }
 
             h2{
