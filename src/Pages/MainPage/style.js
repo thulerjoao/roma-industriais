@@ -13,7 +13,7 @@ export const MainPage = styled.html`
         z-index: -1;
         min-width: 100%;
         /* height: 100vh; */
-        top: 0;
+        bottom: 0;
         
 
     }
@@ -116,6 +116,7 @@ export const MainPage = styled.html`
         .hidenImage{
         background-size: 100%;
         height: 100vh;
+        top: 0;
         
         }
         header{
