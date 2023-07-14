@@ -116,7 +116,7 @@ export const MainPage = styled.html`
         .hidenImage{
         background-size: 100%;
         height: 100vh;
-        top: 0;
+        /* top: 0; */
         
         }
         header{
