@@ -13,7 +13,7 @@ export const MainPage = styled.html`
         z-index: -1;
         min-width: 100%;
         /* height: 100vh; */
-        bottom: 0;
+        top: 0;
         
 
     }
