@@ -112,7 +112,7 @@ export const MainPage = styled.html`
         font-size: 0.8em;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px) {
         .hidenImage{
         background-size: 100%;
         height: 100vh;

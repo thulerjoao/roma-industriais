@@ -63,7 +63,7 @@ export const Part02 = styled.section`
                 }
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 600px) {
                 flex-direction: column;
                 
                 div{

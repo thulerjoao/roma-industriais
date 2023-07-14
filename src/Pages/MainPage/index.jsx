@@ -83,7 +83,7 @@ const MainPage = () => {
     
     function getValorWidthImagem() {
         
-        if (widthJanela > 768) {
+        if (widthJanela > 600) {
             return 100;
         } else {
             return 75;
@@ -92,7 +92,7 @@ const MainPage = () => {
 
     function getValorWidthImagemToService() {
         
-        if (widthJanela > 768) {
+        if (widthJanela > 600) {
             return 100;
         } else {
             return 138;

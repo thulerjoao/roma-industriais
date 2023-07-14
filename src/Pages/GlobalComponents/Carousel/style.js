@@ -15,7 +15,7 @@ export const CarouselTrack = styled.div`
   transform: translateX(${(props) => -props.currentIndex * 200}%);
   width: ${(props) => props.totalImages * 100}%;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     transform: translateX(${(props) => -props.currentIndex * 100}%);
   }
 `;
@@ -32,7 +32,7 @@ export const CarouselImage = styled.img`
     transform: scale(1.1);
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     min-width: 100%;
 
     &:hover{

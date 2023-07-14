@@ -56,7 +56,7 @@ export const Part05 = styled.section`
                     transform: scale(1.01);
                 }
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 600px) {
                 flex-direction: column;
 
                 div{

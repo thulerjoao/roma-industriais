@@ -45,7 +45,7 @@ export const Part01 = styled.section`
                 }   
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 600px) {
 
                 div{
                     min-height: calc(100vh - 75px);

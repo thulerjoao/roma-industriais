@@ -68,7 +68,7 @@ export const Part06 = styled.section`
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px) {
         flex-direction: column;
         height: calc((100vh - 75px));
         justify-content: space-between;

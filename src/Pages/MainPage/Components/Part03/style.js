@@ -48,7 +48,7 @@ export const Part03 = styled.section`
                 }
             }
 
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 600px) {
 
                 section{
                     width: 100%;
