@@ -26,6 +26,7 @@ export const Part06 = styled.section`
                 text-align: start;
                 /* padding-left: 15%; */
                 margin: 5% 0;
+                font-weight: 400;
             }
     
             p{
@@ -33,6 +34,8 @@ export const Part06 = styled.section`
                 padding-left: 5%;
                 padding-right: 25%;
                 margin: 0.1% 0;
+                font-weight: 400;
+
             }
 
             .contactP{
