@@ -1,6 +1,11 @@
 import * as Style from "./style";
 import imageRight from '../../../../assets/images/rightImg.jpg'
 import imageLeft from '../../../../assets/images/leftImg.jpg'
+import img01 from '../../../../assets/images/img01.png'
+import img02 from '../../../../assets/images/img02.png'
+import img03 from '../../../../assets/images/img03.png'
+// import img04 from '../../../../assets/images/img04.png'
+
 import Carousel from '../../../GlobalComponents/Carousel/index';
 import { handleWhatsAppRedirect } from "../../../../Utils/functions/linkToWpp"
 
@@ -11,10 +16,11 @@ const Part02 = () => {
     const images = [
         imageRight,
         imageLeft,
-        imageRight,
-        imageLeft,
-        imageRight,
-        imageLeft,
+        img01,
+        img02,
+        img03,
+        // img04
+        
     ];
 
     return (
