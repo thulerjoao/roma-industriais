@@ -30,7 +30,6 @@ const Part06 = () => {
                     </div>
                     <h2>Faça-nos uma visita</h2>
                     <p>Segunda a Sexta | 08:00h às 17:00h</p>
-                    <p>Sábado | 08:00h à 13:00h</p>
                     <p>---</p>
                     <p>Av. Manoel Carneiro de Menezes, 441, Ponte da Saudade, Nova Friburgo, RJ </p>
                 </html>
