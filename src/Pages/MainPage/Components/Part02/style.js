@@ -10,18 +10,19 @@ export const Part02 = styled.section`
             }
 
             .first{
-                    background-color: #515151;
+                    /* background-color: #515151; */
+                    background-color: white;
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
 
                     h2{
-                        color: white;
+                        color: black;
                     }
 
                     .firstText{
-                    color: white;
+                    color: black;
                     font-size: 2em;
                     width: 15rem;
                     text-align: center;
@@ -31,6 +32,7 @@ export const Part02 = styled.section`
 
                 .secondText{
                     color: white;
+                    color: black;
                     font-size: 1.2em;
                     width: 22rem;
                     text-align: center;
