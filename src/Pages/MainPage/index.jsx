@@ -131,11 +131,11 @@ const MainPage = () => {
                     >
                         Nossa missão
                     </p>
-                    <p className={activeSection === 'about' ? 'active' : ''}
+                    {/* <p className={activeSection === 'about' ? 'active' : ''}
                         onClick={() => handleMenuClick('about', getValorWidthImagem())}
                     >
                         Sobre
-                    </p>
+                    </p> */}
                     <p className={activeSection === 'services' ? 'active' : ''}
                         onClick={() => handleMenuClick('services', space)}
                     >
@@ -162,9 +162,9 @@ const MainPage = () => {
                 <section id='our-mission'>
                     <Part02 />
                 </section>
-                <section id='about'>
+                {/* <section id='about'>
                     <Part03 />
-                </section>
+                </section> */}
                 <section id='services'>
                     <Part04 />
                 </section>
