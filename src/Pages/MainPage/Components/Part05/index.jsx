@@ -50,13 +50,13 @@ const Part05 = () => {
 
     return (
         <Style.Part05>
-            <div className="fisrt">
-                <Carousel images={images} />
-            </div>
             <div className="second">
                 <p className="firstText">Se apaixone por alguns dos</p>
                 <p className="secondText">nossos últimos projetos.</p>
                 <p className="buttonBudget" onClick={handleWhatsAppRedirect}>Quero um orçamento</p>
+            </div>
+            <div className="fisrt">
+                <Carousel images={images} />
             </div>
         </Style.Part05>
     )

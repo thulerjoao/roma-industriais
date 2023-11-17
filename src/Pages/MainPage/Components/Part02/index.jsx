@@ -25,13 +25,13 @@ const Part02 = () => {
 
     return (
         <Style.Part02>
+            <div className="second">
+                <Carousel images={images} />
+            </div>
             <div className="first">
                 <p className="firstText">Realize conosco o seu projeto dos sonhos.</p>
                 <p className="secondText">Te ajudaremos a tirar do papel o projeto de ter móveis de alto padrão e sob medida para seu lar, gerando sofisticação, conforto e requinte.</p>
                 <p className="buttonBudget" onClick={handleWhatsAppRedirect}>Quero orçar</p>
-            </div>
-            <div className="second">
-                <Carousel images={images} />
             </div>
         </Style.Part02>
     )

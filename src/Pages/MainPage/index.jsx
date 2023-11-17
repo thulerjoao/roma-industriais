@@ -55,7 +55,7 @@ const MainPage = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            const sections = ['inicio', 'our-mission', 'about', 'services', 'projects', 'contact'];
+            const sections = ['inicio', 'our-mission', 'services', 'projects', 'contact'];
 
             for (let i = sections.length - 1; i >= 0; i--) {
                 const sectionId = sections[i];
