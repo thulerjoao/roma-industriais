@@ -111,9 +111,8 @@ const MainPage = () => {
         <Style.MainPage >
             <img className={`hidenImage ${isScrollAtEdge&&"blackBG"}`} src={hidenImg}></img>
             <header>
-                <div>
+                <div onClick={() => handleMenuClick('inicio', getValorWidthImagem())}>
                     <img src={logo03}></img>
-                    
                 </div>
                 <div className="socialDiv">
                     <img onClick={redirectToInstagram} src={instagram}></img>
